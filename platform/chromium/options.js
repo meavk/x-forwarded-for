@@ -1400,7 +1400,7 @@
             'saveOptions': () => {
                 console.log('save options called');
                 let ip = (el.ip.value || "").trim();
-                if(methods.checkIp(ip) && ip !== settings.spoofIp)
+                if(ip !== settings.spoofIp)
                 {
                     let message = 'IP Address ' + ((ip === '') ? 'Cleared' : 'Updated'),
                         newSettings = {
